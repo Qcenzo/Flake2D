@@ -51,8 +51,9 @@ package com.qcenzo.flake2d
 		
 		private function onFrame(event:Event):void
 		{
-			if (_clock.flake2d::tick())
+			if (_clock.flake2d::tick()){
 				_scene.render();
+			}
 		}
 	}
 }
